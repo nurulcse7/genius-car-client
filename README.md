@@ -1,3 +1,41 @@
+# Genius Car
+
+#### Live link `client-side` [Click here](https://genius-car-full-stack.web.app/)
+
+#### Live link `server-side` [Click here]()
+
+#### Code link `client-side` [Click here](https://github.com/nurulcse7/genius-car-client)
+
+#### Code link `server-side` [Click here]()
+
+### Description
+
+- This project start with create-react-app
+- Implement UI as per requirement
+- Created dynamic router
+- Every section completed after code push on GitHub
+
+### Technology
+
+- JavaScript
+- Tailwind CSS
+- daisyUI
+- React.js
+- React Router Dom (npm install react-router-dom)
+- React-Context
+
+---
+
+- React Firebase Hooks (npm install --save react-firebase-hooks)
+- React Hook Form (npm install react-hook-form)
+- React Hot Toast (npm install react-hot-toast)
+- React Icons (npm install react-icons --save)
+- React-Switch (npm i react-switch) Dark-light mode button
+- React-to-print (npm install --save react-to-print) Create pdf from web and download also print
+- Deploy (client-side) in firebase
+- Deploy (server-side) in Vercel
+
+<!--
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -69,3 +107,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # genius-car-client
+
+ -->

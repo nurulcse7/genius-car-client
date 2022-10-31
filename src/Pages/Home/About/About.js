@@ -18,7 +18,7 @@ const About = () => {
                         in this field</h1>
                     <p className="py-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
                     <p className="py-6">the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-                    <button className="btn btn-primary">Get More Info</button>
+                    <button className="btn btn-warning">Get More Info</button>
                 </div>
             </div>
         </div>
