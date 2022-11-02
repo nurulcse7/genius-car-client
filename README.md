@@ -1,12 +1,12 @@
-# Genius Car
+# Genius Car (full-stack)
 
-#### Live link `client-side` [Click here](https://genius-car-full-stack.web.app/)
+#### Live link 
+`client-side` [Click here](https://genius-car-full-stack.web.app/)
+`server-side` [Click here](https://github.com/nurulcse7/genius-car-server)
 
-#### Live link `server-side` [Click here]()
-
-#### Code link `client-side` [Click here](https://github.com/nurulcse7/genius-car-client)
-
-#### Code link `server-side` [Click here]()
+#### Code link 
+`client-side` [Click here](https://github.com/nurulcse7/genius-car-client)
+`server-side` [Click here]()
 
 ### Description
 
@@ -16,16 +16,15 @@
 - Every section completed after code push on GitHub
 
 ### Technology
-
+--- 
+#### Front-end
+---
 - JavaScript
 - Tailwind CSS
 - daisyUI
 - React.js
 - React Router Dom (npm install react-router-dom)
 - React-Context
-
----
-
 - React Firebase Hooks (npm install --save react-firebase-hooks)
 - React Hook Form (npm install react-hook-form)
 - React Hot Toast (npm install react-hot-toast)
@@ -33,6 +32,14 @@
 - React-Switch (npm i react-switch) Dark-light mode button
 - React-to-print (npm install --save react-to-print) Create pdf from web and download also print
 - Deploy (client-side) in firebase
+--- 
+#### Back-end
+---
+- Node.JS
+- Express.JS 
+- Middleware with Cors 
+- dotenv
+- MongoDB (Atlas, Cluster)
 - Deploy (server-side) in Vercel
 
 <!--
