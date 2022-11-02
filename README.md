@@ -31,7 +31,7 @@
 - React Icons (npm install react-icons --save)
 - React-Switch (npm i react-switch) Dark-light mode button
 - React-to-print (npm install --save react-to-print) Create pdf from web and download also print
-- Deploy (client-side) in firebase
+- Deploy in firebase (front-end)
 --- 
 #### Back-end
 ---
@@ -40,7 +40,10 @@
 - Middleware with Cors 
 - dotenv
 - MongoDB (Atlas, Cluster)
-- Deploy (server-side) in Vercel
+- JWT (JSON Web Token) (Need to implement)
+- Email: Nodemailer, Mailgun / Mailchimp (Need to implement)
+- Payment getWay: Stripe, bKash (Need to implement)
+- Deploy in Vercel (Back-end)
 
 <!--
 # Getting Started with Create React App
