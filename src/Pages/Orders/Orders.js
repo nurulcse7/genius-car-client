@@ -1,54 +1,59 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
-import OrderRow from './OrderRow'
+import OrderRow from './OrderRow';
 
 const Orders = () => {
   const { user, logOut } = useContext(AuthContext);
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/orders?email=${user?.email}`, {
+    fetch(
+      `https://genius-car-server-steel.vercel.app/orders?email=${user?.email}`,
+      {
         headers: {
-            authorization: `Bearer ${localStorage.getItem('genius-token')}`
+          authorization: `Bearer ${localStorage.getItem('genius-token')}`,
+        },
+      }
+    )
+      .then((res) => {
+        if (res.status === 401 || res.status === 403) {
+          return logOut();
         }
-    })
-        .then(res => {
-            if (res.status === 401 || res.status === 403) {
-                return logOut();
-            }
-            return res.json();
-        })
-        .then(data => {
-            setOrders(data);
-        })
-}, [user?.email, logOut])
+        return res.json();
+      })
+      .then((data) => {
+        setOrders(data);
+      });
+  }, [user?.email, logOut]);
 
-const handleDelete = id => {
-    const proceed = window.confirm('Are you sure, you want to cancel this order');
+  const handleDelete = (id) => {
+    const proceed = window.confirm(
+      'Are you sure, you want to cancel this order'
+    );
     if (proceed) {
-        fetch(`http://localhost:5000/orders/${id}`, {
-            method: 'DELETE',
-            headers: {
-                authorization: `Bearer ${localStorage.getItem('genius-token')}`
-            }
-        })
-            .then(res => res.json())
-            .then(data => {
-                if (data.deletedCount > 0) {
-                    alert('deleted successfully');
-                    const remaining = orders.filter(odr => odr._id !== id);
-                    setOrders(remaining);
-                }
-            })
+      fetch(`https://genius-car-server-steel.vercel.app/orders/${id}`, {
+        method: 'DELETE',
+        headers: {
+          authorization: `Bearer ${localStorage.getItem('genius-token')}`,
+        },
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.deletedCount > 0) {
+            alert('deleted successfully');
+            const remaining = orders.filter((odr) => odr._id !== id);
+            setOrders(remaining);
+          }
+        });
     }
-}
+  };
 
   const handleStatusUpdate = (id) => {
-    fetch(`http://localhost:5000/orders/${id}`, {
+    fetch(`https://genius-car-server-steel.vercel.app/orders/${id}`, {
       method: 'PATCH',
       headers: {
         'content-type': 'application/json',
-        authorization: `Bearer ${localStorage.getItem('genius-token')}`
+        authorization: `Bearer ${localStorage.getItem('genius-token')}`,
       },
       body: JSON.stringify({ status: 'Approved' }),
     })

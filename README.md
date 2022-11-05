@@ -2,7 +2,7 @@
 
 #### Live link 
 `client-side` [Click here](https://genius-car-full-stack.web.app/)
-`server-side` [Click here]()
+`server-side` [Click here](https://genius-car-server-steel.vercel.app/)
 
 #### Code link 
 `client-side` [Click here](https://github.com/nurulcse7/genius-car-client)
