@@ -2,11 +2,11 @@
 
 #### Live link 
 `client-side` [Click here](https://genius-car-full-stack.web.app/)
-`server-side` [Click here](https://github.com/nurulcse7/genius-car-server)
+`server-side` [Click here]()
 
 #### Code link 
 `client-side` [Click here](https://github.com/nurulcse7/genius-car-client)
-`server-side` [Click here]()
+`server-side` [Click here](https://github.com/nurulcse7/genius-car-server)
 
 ### Description
 
